@@ -1,0 +1,15 @@
+_type: chat
+name: qa_chain_chat_prompt
+description: ""
+input_variables: ["context", "chat_history", "question"]
+messages:
+  - role: system
+    template: |
+      You are a helpful assistant who is good at analyzing source information and answering questions. Use the following source documents to answer the user's questions.
+      If you don't know the answer, just say that you don't know.Use three sentences maximum and keep the answer concise.
+  - role: user
+    template: |
+      Context: {context}
+      Chat History: {chat_history}
+      Question: {question}
+      Answer:      

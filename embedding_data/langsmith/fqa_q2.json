@@ -1,0 +1,10 @@
+[
+  {
+    "inputs": {"question": "Công ty Anh Phát thành lập năm nào?"},
+    "outputs": {"answer": "CÔNG TY TNHH THƯƠNG MẠI VÀ ĐẦU TƯ TỔNG HỢP ANH PHÁT thành lập ngày 17/04/2018."}
+  },
+  {
+    "inputs": {"question": "Mã số thuế của công ty là gì?"},
+    "outputs": {"answer": "Mã số thuế của công ty là 2301025890."}
+  }
+]

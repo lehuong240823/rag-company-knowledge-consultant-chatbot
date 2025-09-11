@@ -1,0 +1,11 @@
+title: schema
+type: object
+properties:
+  explanation:
+    type: string
+    description: Step-by-step reasoning.
+  grounded:
+    type: boolean
+    description: True if the student answer meets all of the criteria.
+required:
+  - grounded

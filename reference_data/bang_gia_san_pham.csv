@@ -1,0 +1,13 @@
+﻿SKU,Tên sản phẩm/Dịch vụ,Thương hiệu,Loại sản phẩm,Đơn vị tính,Giá lẻ (VNĐ),Giá sỉ (VNĐ),Số lượng áp dụng giá sỉ,Bảo hành,Tồn kho/Trạng thái,Ghi chú,Ngày cập nhật,Chi tiết kỹ thuật,URL ảnh
+WIFI-ENT-001,Bộ phát wifi doanh nghiệp (Enterprise Router),TP-Link,Thiết bị mạng,Bộ,3800000,3610000,>=5,12 tháng,Còn hàng,Bảo hành 12 tháng,2025-09-11,"Wi-Fi AC, dual band",
+SW-PoE-24,Switch PoE 24 cổng Gigabit,Cisco,Thiết bị mạng,Bộ,5500000,5225000,5-10,12 tháng,Còn hàng,Phù hợp cho camera & VoIP,2025-09-11,24 cổng PoE Gigabit,
+CAM-IP-2MP,Camera IP 2MP hồng ngoại,Hikvision,Camera,Cái,950000,855000,5-10,24 tháng,Còn hàng,Đã bao gồm phần mềm giám sát,2025-09-11,"2MP, hồng ngoại, PoE",
+PBX-MINI,Thiết bị tổng đài IP (PBX mini),Grandstream,Thiết bị tổng đài,Bộ,4200000,3990000,5-10,12 tháng,Còn hàng,Hỗ trợ 50 người dùng,2025-09-11,Hỗ trợ 50 người dùng,
+UPS-1KVA,Bộ lưu điện (UPS 1KVA),APC,Bộ lưu điện,Bộ,3200000,3040000,5-10,12 tháng,Còn hàng,Dùng cho thiết bị mạng,2025-09-11,"1KVA, dùng cho thiết bị mạng",
+SFP-125G,Module thu phát quang SFP 1.25G,HPE,Linh kiện,Cái,600000,540000,50,6 tháng,Còn hàng,Dùng cho switch/router,2025-09-11,"SFP 1.25G, dùng cho switch/router",
+CAT6-CABLE,Dây mạng Cat6 chính hãng,CommScope,Linh kiện,Mét,8500,7650,100,6 tháng,Còn hàng,Cuộn 305m có giá ưu đãi,2025-09-11,"Cat6, 305m/cuộn",
+RJ45-JACK,Jack RJ45 Cat6,AMP,Linh kiện,Cái,2000,1800,100,6 tháng,Còn hàng,Gói 100 cái giảm 10%,2025-09-11,"RJ45 Cat6, gói 100 cái",
+ADP-12V2A,Adapter nguồn 12V/2A,MeanWell,Linh kiện,Cái,85000,76500,50,6 tháng,Còn hàng,Bảo hành 6 tháng,2025-09-11,Adapter 12V/2A,
+VRV-HVAC,Lắp đặt hệ thống điều hòa trung tâm VRV,Danfoss,Dịch vụ HVAC,m² sàn,480000,432000,1,12 tháng,Còn hàng,Giá chưa bao gồm thiết bị,2025-09-11,"VRV trung tâm, lắp đặt chuyên nghiệp",
+WATER-PLUMB,Thi công hệ thống cấp/thoát nước văn phòng,Local Contractor,Dịch vụ cấp/thoát nước,m² sàn,350000,315000,1,12 tháng,Còn hàng,Tư vấn miễn phí,2025-09-11,Hệ thống cấp/thoát nước văn phòng,
+CAM-MAINT,Bảo trì hệ thống camera & mạng LAN,Inhouse,Dịch vụ bảo trì mạng,Gói/tháng,2000000,1900000,1,12 tháng,Còn hàng,Tối đa 20 thiết bị,2025-09-11,Bảo trì tối đa 20 thiết bị,

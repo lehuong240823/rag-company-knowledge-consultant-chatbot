@@ -1,0 +1,82 @@
+[
+  {
+    "inputs": {"question": "Công ty Anh Phát thành lập năm nào?"},
+    "outputs": {"answer": "CÔNG TY TNHH THƯƠNG MẠI VÀ ĐẦU TƯ TỔNG HỢP ANH PHÁT thành lập ngày 17/04/2018."}
+  },
+  {
+    "inputs": {"question": "Mã số thuế của công ty là gì?"},
+    "outputs": {"answer": "Mã số thuế của công ty là 2301025890."}
+  },
+  {
+    "inputs": {"question": "Ai là người đại diện theo pháp luật của công ty?"},
+    "outputs": {"answer": "Người đại diện theo pháp luật là Nguyễn Đình Anh."}
+  },
+  {
+    "inputs": {"question": "Chi nhánh chính của công ty ở đâu?"},
+    "outputs": {"answer": "Trụ sở chính: NR ông Nguyễn Văn Trường, xóm Rừng, khu Bồ Sơn, Phường Võ Cường, Tỉnh Bắc Ninh."}
+  },
+  {
+    "inputs": {"question": "Chi nhánh Hà Nội của công ty ở đâu?"},
+    "outputs": {"answer": "123 phố Lê Duẩn, Quận Hoàn Kiếm, Hà Nội."}
+  },
+  {
+    "inputs": {"question": "Chi nhánh TP.HCM của công ty ở đâu?"},
+    "outputs": {"answer": "456 đường Nguyễn Thị Minh Khai, Quận 3, TP.HCM."}
+  },
+  {
+    "inputs": {"question": "Chi nhánh Đà Nẵng của công ty ở đâu?"},
+    "outputs": {"answer": "789 đường Bạch Đằng, Quận Hải Châu, Đà Nẵng."}
+  },
+  {
+    "inputs": {"question": "Hotline CSKH của công ty là gì?"},
+    "outputs": {"answer": "Hotline CSKH: 1900-1234."}
+  },
+  {
+    "inputs": {"question": "Email liên hệ của công ty là gì?"},
+    "outputs": {"answer": "Email: info@anhphat.com."}
+  },
+  {
+    "inputs": {"question": "Website chính thức của công ty là gì?"},
+    "outputs": {"answer": "Website: www.anhphat.com."}
+  },
+  {
+    "inputs": {"question": "Công ty kinh doanh ngành nghề gì?"},
+    "outputs": {"answer": "Ngành nghề chính: Bán buôn thiết bị và linh kiện điện tử, viễn thông."}
+  },
+  {
+    "inputs": {"question": "Công ty hiện đang hoạt động hay tạm ngừng?"},
+    "outputs": {"answer": "Công ty hiện đang hoạt động."}
+  },
+  {
+    "inputs": {"question": "Các sản phẩm công ty cung cấp gồm những gì?"},
+    "outputs": {"answer": "Công ty cung cấp thiết bị điện tử, linh kiện viễn thông và các dịch vụ liên quan."}
+  },
+  {
+    "inputs": {"question": "Có chính sách bảo hành cho sản phẩm không?"},
+    "outputs": {"answer": "Có, sản phẩm được bảo hành theo quy định nhà sản xuất."}
+  },
+  {
+    "inputs": {"question": "Giờ làm việc của chi nhánh Bắc Ninh là gì?"},
+    "outputs": {"answer": "8:00-17:00, từ thứ Hai đến thứ Sáu."}
+  },
+  {
+    "inputs": {"question": "Chi nhánh nào cung cấp dịch vụ tư vấn kỹ thuật?"},
+    "outputs": {"answer": "Tất cả các chi nhánh đều cung cấp dịch vụ tư vấn kỹ thuật và hỗ trợ khách hàng."}
+  },
+  {
+    "inputs": {"question": "Có giá sỉ cho khách hàng không?"},
+    "outputs": {"answer": "Có, giá sỉ áp dụng cho khách mua số lượng lớn."}
+  },
+  {
+    "inputs": {"question": "Có kênh liên hệ nào khác ngoài hotline?"},
+    "outputs": {"answer": "Có, gồm email, website, Zalo OA và fanpage Facebook."}
+  },
+  {
+    "inputs": {"question": "Công ty có chứng nhận chất lượng không?"},
+    "outputs": {"answer": "Có, công ty được chứng nhận ISO 9001:2015 về quản lý chất lượng sản phẩm điện tử."}
+  },
+  {
+    "inputs": {"question": "Phương pháp tính thuế GTGT của công ty là gì?"},
+    "outputs": {"answer": "Phương pháp tính thuế GTGT: Phương pháp khấu trừ."}
+  }
+]

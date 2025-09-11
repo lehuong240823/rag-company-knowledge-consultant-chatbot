@@ -1,0 +1,11 @@
+﻿ID chính sách,Loại chính sách,Nội dung,Ghi chú,Phạm vi áp dụng,Trạng thái chính sách,Ngày cập nhật,Người phụ trách
+CSKH-001,Đổi trả,Sản phẩm lỗi được đổi trong 7 ngày kể từ ngày nhận,"Cần hóa đơn, sản phẩm còn nguyên vẹn",Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+CSKH-002,Đổi trả,Sản phẩm không ưng ý được đổi trong 3 ngày,"Chỉ áp dụng đổi sản phẩm cùng loại, còn hàng",Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+GIAOHANG-001,Giao hàng,Miễn phí vận chuyển cho đơn hàng >2 triệu,Áp dụng nội thành Hà Nội,Hà Nội nội thành,Đang áp dụng,9/11/2025,CSKH
+GIAOHANG-002,Giao hàng,Thời gian giao hàng từ 1-5 ngày làm việc tùy khu vực,Khu vực khác tính phí theo biểu giá,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+BAOHANH-001,Bảo hành,Bảo hành sản phẩm theo quy định nhà sản xuất,,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+HOTRO-001,Hỗ trợ KH,"Hotline 1900-1234, email: support@anhphat.com, giờ hành chính 8:00-17:00",,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+THANHTOAN-001,Thanh toán,"Chấp nhận tiền mặt, chuyển khoản, thẻ, ví điện tử",Áp dụng cho tất cả chi nhánh,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+KHUYENMAI-001,Khuyến mãi,Giảm 10% cho đơn hàng >5 triệu,Áp dụng theo chương trình hàng tháng,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+BAOMAT-001,Bảo mật,"Thông tin khách hàng được bảo mật, không chia sẻ với bên thứ 3",,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
+KHIEUNAI-001,Khiếu nại / Phản hồi,"Khách hàng gửi phản hồi qua hotline/email, thời gian giải quyết 3-5 ngày",,Toàn quốc,Đang áp dụng,9/11/2025,CSKH
