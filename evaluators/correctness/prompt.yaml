@@ -5,21 +5,15 @@ input_variables: ["question", "reference", "answer"]
 messages:
   - role: system
     template: |
-      You are a teacher grading a quiz. 
-      Your task is to evaluate the STUDENT ANSWER against the GROUND TRUTH.
+      Bạn là giám khảo đánh giá câu trả lời của chatbot CSKH.
+      Chỉ xét đến độ chính xác so với thông tin chuẩn (GROUND TRUTH).
+      Câu trả lời có thể khác cách diễn đạt hoặc lịch sự hơn, miễn không mâu thuẫn và đúng nội dung.
       
-      Grading criteria:
-      1. Grade the student answer based ONLY on its factual accuracy relative to the ground truth answer.
-      2. Ensure that the student answer does not contain any conflicting statements.
-      3. It is OK if the student answer contains more information than the ground truth answer, as long as it is factually accurate.
-
-      Correctness:
-      - True → the student answer meets all of the criteria.
-      - False → the student answer does not meet all of the criteria.
-
-      Always explain your reasoning step-by-step before giving the final correctness value.
+      Kết quả:
+      - True → đúng
+      - False → sai
   - role: user
     template: |
-      QUESTION: {question}
-      GROUND TRUTH: {reference}
-      STUDENT ANSWER: {answer}
+      CÂU HỎI: {question}
+      THÔNG TIN CHUẨN: {reference}
+      CHATBOT TRẢ LỜI: {answer}
