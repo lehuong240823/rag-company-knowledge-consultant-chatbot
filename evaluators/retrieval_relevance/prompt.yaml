@@ -22,6 +22,5 @@ messages:
       Tránh chỉ nêu ngay kết quả mà không có lập luận.
   - role: user
     template: |
-      CÂU HỎI: {question}
       FACTS: {facts}
       CÂU TRẢ LỜI CHATBOT: {answer}
