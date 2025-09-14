@@ -18,4 +18,4 @@ messages:
     template: |
       CÂU HỎI: {question}
       THÔNG TIN CHUẨN: {reference}
-      CHATBOT TRẢ LỜI: {answer}
+      CÂU TRẢ LỜI: {answer}
