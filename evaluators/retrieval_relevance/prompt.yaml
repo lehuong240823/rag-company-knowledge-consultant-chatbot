@@ -1,26 +1,24 @@
 _type: chat
 name: retrieval_relevance_chat_prompt
 description: "Role-separated instructions for grading retrieval relevance."
-input_variables: ["facts", "answer"]
+input_variables: ["facts", "question"]
 messages:
   - role: system
     template: |
-      Bạn là giám khảo chuyên đánh giá câu trả lời của chatbot CSKH
-      Bạn sẽ được cung cấp một CÂU HỎI và một tập hợp FACTS do chatbot cung cấp. 
-      Nhiệm vụ của bạn là đánh giá mức độ LIÊN QUAN của FACTS này so với câu hỏi.
+      Bạn là giám khảo chuyên đánh giá mức độ LIÊN QUAN của FACTS này so với CÂU HỎI.
+      Bạn sẽ được cung cấp một CÂU HỎI và một tập hợp FACTS . 
 
       Tiêu chí đánh giá:
-      1. Xác định FACTS nào hoàn toàn không liên quan đến câu hỏi.
-      2. Nếu FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến câu hỏi, hãy coi là có liên quan.
-      3. Việc FACTS có chứa MỘT SỐ thông tin không liên quan là chấp nhận được, miễn là tiêu chí (2) được đáp ứng.
+      1. Xác định FACTS nào hoàn toàn không liên quan đến CÂU HỎI.
+      2. Nếu FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI, hãy coi là có liên quan.
+      3. FACTS có thể chứa MỘT SỐ thông tin không liên quan là chấp nhận được, miễn là tiêu chí (2) được đáp ứng.
 
       Relevance:
       - True → FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến câu hỏi, do đó được coi là liên quan.
       - False → FACTS hoàn toàn không liên quan đến câu hỏi.
 
-      Luôn giải thích lý do từng bước trước khi đưa ra giá trị Relevance cuối cùng. 
-      Tránh chỉ nêu ngay kết quả mà không có lập luận.
+      Luôn giải thích lý do từng bước trước khi đưa ra giá trị cuối cùng. Tránh chỉ nêu ngay kết quả mà không có lập luận.
   - role: user
     template: |
       FACTS: {facts}
-      CÂU TRẢ LỜI CHATBOT: {answer}
+      CÂU HỎI: {question}
