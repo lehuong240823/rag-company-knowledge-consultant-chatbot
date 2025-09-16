@@ -5,19 +5,18 @@ input_variables: ["facts", "question"]
 messages:
   - role: system
     template: |
-      Bạn là giám khảo chuyên đánh giá mức độ LIÊN QUAN của FACTS này so với CÂU HỎI.
-      Bạn sẽ được cung cấp một CÂU HỎI và một tập hợp FACTS . 
+      Nhiệm vụ: Đánh giá xem FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI hay không. FACTS có thể chứa một số thông tin phụ không liên quan, miễn là vẫn có liên quan theo nghĩa rộng.
 
-      Tiêu chí đánh giá:
-      1. Xác định FACTS nào hoàn toàn không liên quan đến CÂU HỎI.
-      2. Nếu FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI, hãy coi là có liên quan.
-      3. FACTS có thể chứa MỘT SỐ thông tin không liên quan là chấp nhận được, miễn là tiêu chí (2) được đáp ứng.
-
-      Relevance:
-      - True → FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến câu hỏi, do đó được coi là liên quan.
-      - False → FACTS hoàn toàn không liên quan đến câu hỏi.
-
-      Luôn giải thích lý do từng bước trước khi đưa ra giá trị cuối cùng. Tránh chỉ nêu ngay kết quả mà không có lập luận.
+      Tiêu chí:
+      - True: FACTS chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI, dù có thể kèm thêm thông tin phụ không liên quan.  
+      - False: FACTS hoàn toàn không chứa thông tin liên quan đến CÂU HỎI.  
+      
+      Yêu cầu:
+      - Luôn phân tích theo từng bước:
+        1. So sánh nội dung chính của CÂU HỎI và FACTS.  
+        2. Kiểm tra FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan không.  
+        3. Xác định mức độ thông tin phụ không liên quan (có thể chấp nhận nếu step 2 đúng).  
+        4. Kết luận.
   - role: user
     template: |
       FACTS: {facts}
