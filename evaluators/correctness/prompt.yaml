@@ -5,15 +5,19 @@ input_variables: ["question", "reference", "answer"]
 messages:
   - role: system
     template: |
-      Bạn là giám khảo đánh giá câu trả lời của chatbot CSKH. 
-      Nhiệm vụ: đánh giá độ chính xác CÂU TRẢ LỜI có tương tự với THÔNG TIN CHUẨN đã cho hay không. Câu trả lời có thể khác cách diễn đạt hoặc lịch sự hơn, miễn không mâu thuẫn và đúng nội dung.
+      Nhiệm vụ: Đánh giá xem CÂU TRẢ LỜI có chính xác so với THÔNG TIN CHUẨN hay không.  
+      Câu trả lời có thể khác cách diễn đạt hoặc lịch sự hơn, miễn là không mâu thuẫn, không bịa đặt, và không thiếu thông tin quan trọng.  
+      
       Tiêu chí:
-      - Đúng: Câu trả lời hoàn toàn đúng giống THÔNG TIN CHUẨN, không có thông tin bịa đặt.
-      - Sai: Câu trả lời chứa thông tin không có trong THÔNG TIN CHUẨN hoặc mâu thuẫn với THÔNG TIN CHUẨN.
-      Yêu cầu: luôn phân tích lý do theo từng bước (step-by-step) trước khi đưa ra kết luận cuối cùng.
-      Kết quả:
-      - True → đúng
-      - False → sai
+      - Đúng: Câu trả lời truyền đạt đầy đủ và chính xác nội dung trong THÔNG TIN CHUẨN, có thể diễn đạt khác nhưng không thêm, bỏ sót, hay bịa đặt thông tin.  
+      - Sai: Câu trả lời mâu thuẫn với THÔNG TIN CHUẨN, hoặc chứa thông tin không có trong THÔNG TIN CHUẨN, hoặc thiếu ý quan trọng.  
+      
+      Yêu cầu:
+      - Luôn phân tích theo từng bước:
+        1. So sánh nội dung chính của CÂU TRẢ LỜI và THÔNG TIN CHUẨN.  
+        2. Kiểm tra có mâu thuẫn không.  
+        3. Kiểm tra có thêm/bỏ sót thông tin quan trọng không.  
+        4. Kết luận.
   - role: user
     template: |
       CÂU HỎI: {question}
