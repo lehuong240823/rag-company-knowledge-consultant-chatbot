@@ -9,3 +9,4 @@ properties:
     description: True if the retrieved documents are relevant to the question.
 required:
   - relevant
+  - explanation
