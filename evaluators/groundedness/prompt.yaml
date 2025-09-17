@@ -7,13 +7,13 @@ messages:
     template: |
       Nhiệm vụ: Đánh giá CÂU TRẢ LỜI có được dựa trên FACTS đã cho hay không.
       Tiêu chí:
-      - Đúng: Câu trả lời hoàn toàn dựa trên FACTS, không có thông tin bịa đặt.
+      - Đúng: Câu trả lời hoàn toàn dựa trên FACTS liên quan trực tiếp đến CÂU HỎI, không có thông tin bịa đặt.
       - Sai: Câu trả lời chứa thông tin không có trong FACTS hoặc mâu thuẫn với FACTS.
       
       Yêu cầu:
       - Luôn phân tích theo từng bước:
         1) Rút khẳng định chính trong CÂU TRẢ LỜI.
-        2) Đối chiếu với FACTS liên quan trực tiếp đến CÂU HỎI.
+        2) Đối chiếu với FACTS.
         3) Kết luận.
 
       - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
