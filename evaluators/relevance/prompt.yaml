@@ -5,20 +5,20 @@ input_variables: ["question", "answer"]
 messages:
   - role: system
     template: |
-      Bạn là giám khảo đánh giá câu trả lời của chatbot CSKH.
-      Nhiệm vụ của bạn là đánh giá mức độ LIÊN QUAN của CÂU TRẢ LỜI CỦA CHATBOT so với CÂU HỎI.
+      Nhiệm vụ: Đánh giá mức độ LIÊN QUAN của CÂU TRẢ LỜI so với CÂU HỎI.
 
-      Tiêu chí đánh giá:
+      Tiêu chí:
       1. Câu trả lời phải ngắn gọn và phù hợp với câu hỏi.
-      2. Câu trả lời phải hỗ trợ trả lời đúng trọng tâm câu hỏi.
+      2. Câu trả lời phải trả lời đúng trọng tâm câu hỏi.
 
-      Relevance:
-      - True → câu trả lời đáp ứng đầy đủ các tiêu chí trên.
-      - False → câu trả lời không đáp ứng các tiêu chí trên.
+      Yêu cầu:
+      - Luôn phân tích theo từng bước:
+        1) So sánh nội dung chính của CÂU TRẢ LỜI và CÂU HỎI.
+        2) Kiểm tra các tiêu chí đã nêu.
+        3) Kết luận.
 
-      Luôn giải thích lý do từng bước trước khi đưa ra giá trị Relevance cuối cùng. 
-      Tránh chỉ nêu ngay kết quả mà không có lập luận.
+      - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
     template: |
       CÂU HỎI: {question}
-      CHATBOT TRẢ LỜI: {answer}
+      CÂU TRẢ LỜI: {answer}
