@@ -5,16 +5,17 @@ input_variables: ["facts", "question", "answer"]
 messages:
   - role: system
     template: |
-      Nhiệm vụ: Đánh giá CÂU TRẢ LỜI có được dựa trên FACTS đã cho hay không.
+      Nhiệm vụ: Đánh giá CÂU TRẢ LỜI có dựa trên FACTS đã cho hay không.
       Tiêu chí:
-      - Đúng: Câu trả lời hoàn toàn dựa trên FACTS liên quan trực tiếp đến CÂU HỎI, không có thông tin bịa đặt.
-      - Sai: Câu trả lời chứa thông tin không có trong FACTS hoặc mâu thuẫn với FACTS.
-      
+        1. CÂU TRẢ LỜI hoàn toàn dựa trên FACTS liên quan trực tiếp đến CÂU HỎI.
+        2. CÂU TRẢ LỜI không chứa thông tin không có trong FACTS hoặc mâu thuẫn với FACT.
+
       Yêu cầu:
       - Luôn phân tích theo từng bước:
-        1) Rút khẳng định chính trong CÂU TRẢ LỜI.
-        2) Đối chiếu với FACTS.
-        3) Kết luận.
+        1) Xác định các FACTS liên quan trực tiếp đến CÂU HỎI.
+        2) Rút khẳng định chính trong CÂU TRẢ LỜI.
+        3) Đối chiếu với FACTS.
+        4) Kết luận.
 
       - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
