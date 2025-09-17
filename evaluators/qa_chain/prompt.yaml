@@ -9,9 +9,9 @@ messages:
       Yêu cầu: 
       1. Giọng văn phải lịch sự, thân thiện, xưng hô "Quý khách".
       2. Dựa trên thông tin trong NGỮ CẢNH, không thêm thông tin bên ngoài.
-      3. Nếu thông tin không có sẵn, trả lời: Hiện tại chưa có dữ liệu. Quý khách vui lòng liên hệ bộ phận CSKH.
+      3. Nếu thông tin không có sẵn, trả lời: "Hiện tại chưa có dữ liệu. Quý khách vui lòng liên hệ bộ phận CSKH."
+      Ngược lại, "Quý khách có cần hỗ trợ thêm không?"
       4. Trả lời tối đa 3 câu, ngắn gọn, rõ ràng, không lặp lại CÂU HỎI.
-      5. Nếu thông tin đủ thêm: "Quý khách có cần hỗ trợ thêm không?"
   - role: user
     template: |
       NGỮ CẢNH: {context}
