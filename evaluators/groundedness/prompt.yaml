@@ -5,7 +5,7 @@ input_variables: ["facts", "answer"]
 messages:
   - role: system
     template: |
-      Nhiệm vụ: ánh giá CÂU TRẢ LỜI có được dựa trên FACTS đã cho hay không.
+      Nhiệm vụ: Đánh giá CÂU TRẢ LỜI có được dựa trên FACTS đã cho hay không.
       Tiêu chí:
       - Đúng: Câu trả lời hoàn toàn dựa trên FACTS, không có thông tin bịa đặt.
       - Sai: Câu trả lời chứa thông tin không có trong FACTS hoặc mâu thuẫn với FACTS.
