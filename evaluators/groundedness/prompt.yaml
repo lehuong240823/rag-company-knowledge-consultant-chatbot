@@ -1,7 +1,7 @@
 _type: chat
 name: groundedness_chat_prompt
 description: "Role-separated instructions for grading groundedness."
-input_variables: ["facts", "answer"]
+input_variables: ["facts", "question", "answer"]
 messages:
   - role: system
     template: |
@@ -13,11 +13,12 @@ messages:
       Yêu cầu:
       - Luôn phân tích theo từng bước:
         1) Rút khẳng định chính trong CÂU TRẢ LỜI.
-        2) Đối chiếu với FACTS.
+        2) Đối chiếu với FACTS liên quan trực tiếp đến CÂU HỎI.
         3) Kết luận.
 
       - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
     template: |
       FACTS: {facts}
-      CHATBOT TRẢ LỜI: {answer}
+      CÂU HỎI: {question}
+       TRẢ LỜI: {answer}
