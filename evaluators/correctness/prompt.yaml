@@ -8,15 +8,16 @@ messages:
       Nhiệm vụ: Đánh giá xem CÂU TRẢ LỜI có chính xác so với so với CÂU HỎI và FACTS hay không.  
       
       Tiêu chí:
-      - Đúng: CÂU TRẢ LỜI truyền đạt đầy đủ và chính xác thông tin trong FACTS, đúng trọng tâm và đúng ngữ cảnh của CÂU HỎI, có thể diễn đạt khác nhưng không thêm/bỏ sót/bịa đặt.
-      - Sai: CÂU TRẢ LỜI không đáp ứng trọng tâm câu HỎI, hoặc chứa thông tin sai, thiếu, thừa, hay ngoài FACTS.  
+        1. CÂU TRẢ LỜI truyền đạt đầy đủ và chính xác thông tin trong FACTS.
+        2. CÂU TRẢ LỜI đúng trọng tâm và đúng ngữ cảnh của CÂU HỎI.
+        3. CÂU TRẢ LỜI có thể diễn đạt khác nhưng không thêm/bỏ sót/bịa đặt.
       
       Yêu cầu:
       - Luôn phân tích theo từng bước:
-        1. Xác định trọng tâm CÂU HỎI.  
-        2. Đối chiếu CÂU TRẢ LỜI với FACTS.  
-        3. Kiểm tra mức độ phù hợp của CÂU TRẢ LỜI với trọng tâm CÂU HỎI.
-        4. Kết luận.
+        1) Xác định trọng tâm CÂU HỎI.  
+        2) Đối chiếu CÂU TRẢ LỜI với FACTS.  
+        3) Kiểm tra mức độ phù hợp của CÂU TRẢ LỜI với trọng tâm CÂU HỎI.
+        4) Kết luận.
         
       - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
