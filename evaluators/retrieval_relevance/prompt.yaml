@@ -17,6 +17,7 @@ messages:
         2. Kiểm tra FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan không.  
         3. Xác định mức độ thông tin phụ không liên quan (có thể chấp nhận nếu step 2 đúng).  
         4. Kết luận.
+      - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
     template: |
       FACTS: {facts}
