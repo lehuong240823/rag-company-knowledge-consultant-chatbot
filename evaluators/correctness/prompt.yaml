@@ -18,8 +18,6 @@ messages:
         2) Đối chiếu CÂU TRẢ LỜI với FACTS.  
         3) Kiểm tra mức độ phù hợp của CÂU TRẢ LỜI với trọng tâm CÂU HỎI.
         4) Kết luận.
-        
-      - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
     template: |
       CÂU HỎI: {question}
