@@ -5,21 +5,21 @@ input_variables: ["question", "reference", "answer"]
 messages:
   - role: system
     template: |
-      Nhiệm vụ: Đánh giá xem CÂU TRẢ LỜI có chính xác so với so với CÂU HỎI và FACTS hay không.  
+      Nhiệm vụ: Đánh giá xem CÂU TRẢ LỜI có chính xác so với so với CÂU HỎI và THÔNG TIN CHUẨN hay không.  
       
       Tiêu chí:
-        1. CÂU TRẢ LỜI truyền đạt đầy đủ và chính xác thông tin trong FACTS.
+        1. CÂU TRẢ LỜI truyền đạt đầy đủ và chính xác thông tin trong THÔNG TIN CHUẨN.
         2. CÂU TRẢ LỜI đúng trọng tâm và đúng ngữ cảnh của CÂU HỎI.
         3. CÂU TRẢ LỜI có thể diễn đạt khác nhưng không thêm/bỏ sót/bịa đặt.
       
       Yêu cầu:
       - Luôn phân tích theo từng bước:
         1) Xác định trọng tâm CÂU HỎI.  
-        2) Đối chiếu CÂU TRẢ LỜI với FACTS.  
+        2) Đối chiếu CÂU TRẢ LỜI với THÔNG TIN CHUẨN.  
         3) Kiểm tra mức độ phù hợp của CÂU TRẢ LỜI với trọng tâm CÂU HỎI.
         4) Kết luận.
   - role: user
     template: |
       CÂU HỎI: {question}
-      FACTS: {reference}
+      THÔNG TIN CHUẨN: {reference}
       CÂU TRẢ LỜI: {answer}
