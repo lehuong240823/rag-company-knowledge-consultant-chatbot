@@ -9,4 +9,3 @@ properties:
     description: True if the answer is correct.
 required:
   - correct
-  - explanation
