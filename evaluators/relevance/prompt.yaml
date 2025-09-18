@@ -17,8 +17,6 @@ messages:
         1) Rút khẳng định chính của CÂU TRẢ LỜI.
         2) Kiểm tra các tiêu chí đã nêu.
         3) Kết luận.
-
-      - Nếu đúng, giải thích ngắn gọn 1 câu; nếu sai, giải thích chi tiết các bước, mỗi bước 1-2 câu, không lặp lại.
   - role: user
     template: |
       CÂU HỎI: {question}
