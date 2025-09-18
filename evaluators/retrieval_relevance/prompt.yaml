@@ -5,18 +5,18 @@ input_variables: ["facts", "question"]
 messages:
   - role: system
     template: |
-      Nhiệm vụ: Đánh giá xem FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI hay không. 
+      Nhiệm vụ: Đánh giá xem V có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI hay không. 
 
       Tiêu chí:
-        1. FACTS chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI.
-        2. FACTS có thể kèm thêm thông tin phụ không liên quan.
+        1. THÔNG TIN CHUẨN chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI.
+        2. THÔNG TIN CHUẨN có thể kèm thêm thông tin phụ không liên quan.
       
       Yêu cầu:
       - Luôn phân tích theo từng bước:
         1) Xác định trọng tâm chính của CÂU HỎI.
-        2) Kiểm tra FACTS có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan không.  
+        2) Kiểm tra THÔNG TIN CHUẨN có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan không.  
         3) Kết luận.
   - role: user
     template: |
-      FACTS: {facts}
+      THÔNG TIN CHUẨN: {facts}
       CÂU HỎI: {question}
