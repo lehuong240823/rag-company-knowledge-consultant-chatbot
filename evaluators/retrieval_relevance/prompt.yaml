@@ -15,7 +15,7 @@ messages:
       - Luôn phân tích theo từng bước:
         1) Xác định trọng tâm chính của CÂU HỎI.
         2) Kiểm tra THÔNG TIN CHUẨN có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan không.  
-        3) Kết luận.
+        3) Kết luận: Đúng/Sai.
   - role: user
     template: |
       THÔNG TIN CHUẨN: {facts}
