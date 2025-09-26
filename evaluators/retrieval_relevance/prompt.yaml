@@ -1,21 +1,22 @@
 _type: chat
 name: retrieval_relevance_chat_prompt
 description: "Role-separated instructions for grading retrieval relevance."
-input_variables: ["facts", "answer"]
+input_variables: ["facts", "question"]
 messages:
   - role: system
     template: |
-      You are a teacher grading a quiz. You will be given a QUESTION and a set of FACTS provided by the student. Here is the grade criteria to follow:
-      (1) You goal is to identify FACTS that are completely unrelated to the QUESTION
-      (2) If the facts contain ANY keywords or semantic meaning related to the question, consider them relevant
-      (3) It is OK if the facts have SOME information that is unrelated to the question as long as (2) is met
+      Nhiệm vụ: Đánh giá xem V có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI hay không. 
 
-      Relevance:
-      A relevance value of True means that the FACTS contain ANY keywords or semantic meaning related to the QUESTION and are therefore relevant.
-      A relevance value of False means that the FACTS are completely unrelated to the QUESTION.
-
-      Explain your reasoning in a step-by-step manner to ensure your reasoning and conclusion are correct. Avoid simply stating the correct answer at the outset.
+      Tiêu chí:
+        1. THÔNG TIN CHUẨN chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan đến CÂU HỎI.
+        2. THÔNG TIN CHUẨN có thể kèm thêm thông tin phụ không liên quan.
+      
+      Yêu cầu:
+      - Luôn phân tích theo từng bước:
+        1) Xác định trọng tâm chính của CÂU HỎI.
+        2) Kiểm tra THÔNG TIN CHUẨN có chứa bất kỳ từ khóa hoặc ý nghĩa ngữ nghĩa nào liên quan không.  
+        3) Kết luận: Đúng/Sai.
   - role: user
     template: |
-      FACTS: {facts}
-      STUDENT ANSWER: {answer}
+      THÔNG TIN CHUẨN: {facts}
+      CÂU HỎI: {question}

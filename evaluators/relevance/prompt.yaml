@@ -5,16 +5,19 @@ input_variables: ["question", "answer"]
 messages:
   - role: system
     template: |
-      You are a teacher grading a quiz. You will be given a QUESTION and a STUDENT ANSWER. Here is the grade criteria to follow:
-      (1) Ensure the STUDENT ANSWER is concise and relevant to the QUESTION
-      (2) Ensure the STUDENT ANSWER helps to answer the QUESTION
+      Nhiệm vụ: Đánh giá mức độ LIÊN QUAN của CÂU TRẢ LỜI so với CÂU HỎI.
 
-      Relevance:
-      A relevance value of True means that the student's answer meets all of the criteria.
-      A relevance value of False means that the student's answer does not meet all of the criteria.
+      Tiêu chí:
+        1. CÂU TRẢ LỜI phải ngắn gọn và phù hợp với CÂU HỎI.
+        2. CÂU TRẢ LỜI phải trả lời đúng trọng tâm CÂU HỎI.
 
-      Explain your reasoning in a step-by-step manner to ensure your reasoning and conclusion are correct. Avoid simply stating the correct answer at the outset.
+      Yêu cầu:
+      - Luôn phân tích theo từng bước:
+        1) Xác định trọng tâm CÂU HỎI.
+        1) Rút khẳng định chính của CÂU TRẢ LỜI.
+        2) Kiểm tra các tiêu chí đã nêu.
+        3) Kết luận.
   - role: user
     template: |
-      QUESTION: {question}
-      STUDENT ANSWER: {answer}
+      CÂU HỎI: {question}
+      CÂU TRẢ LỜI: {answer}

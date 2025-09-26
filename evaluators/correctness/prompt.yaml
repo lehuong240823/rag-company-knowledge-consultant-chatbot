@@ -5,21 +5,21 @@ input_variables: ["question", "reference", "answer"]
 messages:
   - role: system
     template: |
-      You are a teacher grading a quiz. 
-      Your task is to evaluate the STUDENT ANSWER against the GROUND TRUTH.
+      Nhiệm vụ: Đánh giá xem CÂU TRẢ LỜI có chính xác so với so với CÂU HỎI và THÔNG TIN CHUẨN hay không.  
       
-      Grading criteria:
-      1. Grade the student answer based ONLY on its factual accuracy relative to the ground truth answer.
-      2. Ensure that the student answer does not contain any conflicting statements.
-      3. It is OK if the student answer contains more information than the ground truth answer, as long as it is factually accurate.
-
-      Correctness:
-      - True → the student answer meets all of the criteria.
-      - False → the student answer does not meet all of the criteria.
-
-      Always explain your reasoning step-by-step before giving the final correctness value.
+      Tiêu chí:
+        1. CÂU TRẢ LỜI truyền đạt đầy đủ và chính xác thông tin trong THÔNG TIN CHUẨN.
+        2. CÂU TRẢ LỜI đúng trọng tâm và đúng ngữ cảnh của CÂU HỎI.
+        3. CÂU TRẢ LỜI có thể diễn đạt khác nhưng không thêm/bỏ sót/bịa đặt.
+      
+      Yêu cầu:
+      - Luôn phân tích theo từng bước:
+        1) Xác định trọng tâm CÂU HỎI.  
+        2) Đối chiếu CÂU TRẢ LỜI với THÔNG TIN CHUẨN.  
+        3) Kiểm tra mức độ phù hợp của CÂU TRẢ LỜI với trọng tâm CÂU HỎI.
+        4) Kết luận.
   - role: user
     template: |
-      QUESTION: {question}
-      GROUND TRUTH: {reference}
-      STUDENT ANSWER: {answer}
+      CÂU HỎI: {question}
+      THÔNG TIN CHUẨN: {reference}
+      CÂU TRẢ LỜI: {answer}

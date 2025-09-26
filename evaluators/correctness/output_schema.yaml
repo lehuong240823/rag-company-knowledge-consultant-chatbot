@@ -6,6 +6,6 @@ properties:
     description: Step-by-step reasoning.
   correct:
     type: boolean
-    description: True if the student answer is correct.
+    description: True if the answer is correct.
 required:
   - correct

@@ -3,9 +3,9 @@ type: object
 properties:
   explanation:
     type: string
-    description: Step-by-step reasoning.
+    description: Giải thích theo các bước.
   relevant:
     type: boolean
-    description: True if the retrieved documents are relevant to the question.
+    description: Đúng nếu tài liệu liên quan đến câu hỏi.
 required:
   - relevant
